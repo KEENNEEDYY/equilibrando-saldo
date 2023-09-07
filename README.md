@@ -1,18 +1,46 @@
-## Getting Started
+# Descrição
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Para esse desafio, considere que você foi contratado por uma empresa bancária para auxiliar nas implementações e melhorias do sistema empresarial. Em uma análise inicial, foi identificado pela equipe financeira a necessidade de desenvolver uma solução que permita ao cliente equilibrar seu saldo bancário. Dessa forma, o programa deve solicitar uma entrada que representa o saldo atual do funcionário, e após, seja informado o valor de duas transações, sendo elas: um depósito e um saque. O programa deve atualizar o saldo com base nas transações e exibir o saldo final.
 
-## Folder Structure
+**Informação:** As transações de depósito e retirada devem ser tratadas como valores positivos e negativos, respectivamente, para garantir que o cálculo do saldo final seja realizado corretamente.
 
-The workspace contains two folders by default, where:
+# Entrada
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+`saldoAtual:` um número decimal representando o saldo atual da conta bancária.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+`valorDeposito`: um número decimal representando o valor a ser depositado na conta.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+`valorRetirada`: um número decimal representando o valor a ser retirado da conta.
 
-## Dependency Management
+**Regra de Formatação:** Considere apenas **uma casa decimal** para esse desafio.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+# Saída
+
+Um número decimal que representa o saldo atualizado na conta bancária após o processamento das transações.
+
+# Exemplos
+
+A tabela abaixo apresenta exemplos com alguns dados de entrada e suas respectivas saídas esperadas. Certifique-se de testar seu programa com esses exemplos e com outros casos possíveis.
+
+<table >
+    <thead >
+        <tr >
+            <th  >Entrada</th>
+            <th style="100%">Saída</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td  style="100%">1000500200</td>
+            <td style="100%">Saldo atualizado na conta: 1300.0</td>
+        </tr>
+        <tr>
+            <td  style="100%">1001050</td>
+            <td style="100%">Saldo atualizado na conta: 60.0</td>
+        </tr>
+        <tr>
+            <td style="100%">40001500200</td>
+            <td style="100%">Saldo atualizado na conta: 5300.0</td>
+        </tr>
+    </tbody>
+</table>
